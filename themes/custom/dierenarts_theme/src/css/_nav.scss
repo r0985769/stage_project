@@ -1,0 +1,39 @@
+.region-navigation {
+    background: white;
+    color: black;
+    padding: 1rem 0;
+    text-align: center;
+
+    ul.menu {
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+
+      li {
+        margin: 4px;
+
+        a {
+          display: block;
+          padding: 20px 20px; 
+          color: #7a5c9e;
+          text-decoration: none;
+          font-size: 1.2rem;
+          font-weight: bold;
+
+          &.is-active {
+            background-color: #e6c8ff;
+            color: white;
+            border-radius: 10px;
+          }
+
+          &:hover {
+            color: white;
+            background-color: #e6c8ff;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }

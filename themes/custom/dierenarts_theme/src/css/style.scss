@@ -1,0 +1,75 @@
+   
+   @import "header";
+   @import "footer";
+   @import "nav";
+   
+   
+   body{
+    font-family: "Delius";
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: bold;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    }
+
+
+
+
+
+.hero {
+    padding: 50px;
+    background: #e6c8ff; /* Lichte paarse achtergrond */
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.region-hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    background: #e6c8ff; /* Lichte paarse achtergrond */
+
+}
+
+.region-hero img {
+    max-width: 400px; /* Maximale breedte van de afbeelding */
+    height: auto;
+    margin-right: 20px; /* Ruimte tussen afbeelding en tekst */
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: #6a3d91; /* Donkerder paars voor de titel */
+    font-weight: bold;
+}
+
+.hero .text {
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 0;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+  
+

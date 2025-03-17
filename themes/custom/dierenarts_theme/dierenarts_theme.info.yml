@@ -1,0 +1,16 @@
+name: 'Dierenarts theme'
+type: theme
+description: 'Een custom theme'
+core_version_requirement: ^10
+base theme: classy
+package: custom
+dependencies:
+  - classy:classy
+libraries:
+  - dierenarts_theme/global-styling
+regions:
+  header: 'Header'
+  navigation: 'Navigation'
+  hero: 'Hero Image'
+  content: 'Content'
+  footer: 'Footer'

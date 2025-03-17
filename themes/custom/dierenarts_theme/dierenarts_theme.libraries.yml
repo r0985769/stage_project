@@ -1,0 +1,9 @@
+global-styling:
+  version: 1.0
+  css:
+    theme:
+      dist/css/style.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - classy:classy/base

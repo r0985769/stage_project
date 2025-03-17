@@ -1142,9 +1142,8 @@ class ParagraphsWidget extends WidgetBase {
         else {
           $converted_paragraph = $converted_paragraphs[$key];
           if (!$converted_paragraph->hasTranslation($langcode)) {
-            $values = $paragraph_values instanceof ParagraphInterface ? $paragraph_values->toArray() : $paragraph_values;
             // Add the translation to the default translation paragraph.
-            $conversion_manager->addTranslation($converted_paragraph, $langcode, $values);
+            $conversion_manager->addTranslation($converted_paragraph, $langcode, $paragraph_values);
           }
         }
       }

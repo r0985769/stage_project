@@ -1,0 +1,109 @@
+.region-footer {
+  text-align: center;
+  padding: 8px;
+  background: #e6c8ff;
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.region-footer ul.menu li a {
+  color: #7a5c9e;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.region-footer ul.menu li a:hover {
+  color: white;
+}
+
+.region-navigation {
+  background: white;
+  color: black;
+  padding: 1rem 0;
+  text-align: center;
+}
+.region-navigation ul.menu {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.region-navigation ul.menu li {
+  margin: 4px;
+}
+.region-navigation ul.menu li a {
+  display: block;
+  padding: 20px 20px;
+  color: #7a5c9e;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.region-navigation ul.menu li a.is-active {
+  background-color: #e6c8ff;
+  color: white;
+  border-radius: 10px;
+}
+.region-navigation ul.menu li a:hover {
+  color: white;
+  background-color: #e6c8ff;
+  border-radius: 10px;
+}
+
+body {
+  font-family: "Delius";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.hero {
+  padding: 50px;
+  background: #e6c8ff; /* Lichte paarse achtergrond */
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+
+.region-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  background: #e6c8ff; /* Lichte paarse achtergrond */
+}
+
+.region-hero img {
+  max-width: 400px; /* Maximale breedte van de afbeelding */
+  height: auto;
+  margin-right: 20px; /* Ruimte tussen afbeelding en tekst */
+}
+
+.hero h2 {
+  font-size: 3rem;
+  color: #6a3d91; /* Donkerder paars voor de titel */
+  font-weight: bold;
+}
+
+.hero .text {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
