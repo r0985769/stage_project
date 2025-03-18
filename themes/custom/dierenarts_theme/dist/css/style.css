@@ -32,10 +32,10 @@
   margin: 0;
   list-style: none;
 }
-.region-navigation ul.menu li {
+.region-navigation li {
   margin: 4px;
 }
-.region-navigation ul.menu li a {
+.region-navigation li a {
   display: block;
   padding: 20px 20px;
   color: #7a5c9e;
@@ -43,25 +43,40 @@
   font-size: 1.2rem;
   font-weight: bold;
 }
-.region-navigation ul.menu li a.is-active {
+.region-navigation li a.is-active {
   background-color: #e6c8ff;
   color: white;
   border-radius: 10px;
 }
-.region-navigation ul.menu li a:hover {
+.region-navigation li a:hover {
   color: white;
   background-color: #e6c8ff;
   border-radius: 10px;
 }
 
-body {
-  font-family: "Delius";
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: bold;
-  margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+nav.block-menu {
+  display: flex;
+  align-items: center; /* Zorgt ervoor dat alles netjes uitgelijnd is */
+  justify-content: center; /* Houdt het menu in het midden */
+  position: relative;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 20px; /* Zet het logo links */
+}
+
+.menu-logo-icon {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.menu-logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #7a5c9e;
 }
 
 .hero {
@@ -73,6 +88,16 @@ body {
   align-items: center;
   text-align: left;
 }
+.hero h2 {
+  font-size: 3rem;
+  color: #6a3d91; /* Donkerder paars voor de titel */
+  font-weight: bold;
+}
+.hero.text {
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0;
+}
 
 .region-hero {
   display: flex;
@@ -80,25 +105,12 @@ body {
   align-items: center;
   max-width: 1000px;
   width: 100%;
-  background: #e6c8ff; /* Lichte paarse achtergrond */
+  background: #e6c8ff;
 }
-
 .region-hero img {
-  max-width: 400px; /* Maximale breedte van de afbeelding */
+  max-width: 300px;
   height: auto;
-  margin-right: 20px; /* Ruimte tussen afbeelding en tekst */
-}
-
-.hero h2 {
-  font-size: 3rem;
-  color: #6a3d91; /* Donkerder paars voor de titel */
-  font-weight: bold;
-}
-
-.hero .text {
-  font-size: 1.5rem;
-  text-align: left;
-  margin: 0;
+  margin-right: 20px;
 }
 
 .right-content {
@@ -106,4 +118,103 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+}
+
+.view-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+
+.views-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.views-col {
+  flex: 1;
+  max-width: 320px;
+  min-width: 280px;
+  box-sizing: border-box;
+}
+
+article {
+  margin-bottom: 50px;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto 12px;
+  object-fit: cover;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #7a5c9e;
+  margin: 0 0 8px 0;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  color: #6a3d91;
+  margin: 0;
+}
+
+.form--inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.form-item label {
+  font-weight: bold;
+  color: #7a5c9e;
+  margin-right: 8px;
+}
+
+.form-select {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #fff;
+  cursor: pointer;
+  border: #e6c8ff 1px solid;
+  border-radius: 5px;
+  color: #6a3d91;
+}
+.form-select:hover {
+  background-color: #f0f0f0;
+}
+
+.form-submit {
+  background-color: #e6c8ff;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+.form-submit:hover {
+  background-color: #6a3d91;
+}
+
+body {
+  font-family: "Delius";
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: bold;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }

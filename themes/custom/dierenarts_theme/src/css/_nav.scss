@@ -3,37 +3,64 @@
     color: black;
     padding: 1rem 0;
     text-align: center;
-
+  
     ul.menu {
       display: flex;
-      justify-content: center;
+      justify-content: center; 
       padding: 0;
       margin: 0;
       list-style: none;
-
-      li {
-        margin: 4px;
-
-        a {
-          display: block;
-          padding: 20px 20px; 
-          color: #7a5c9e;
-          text-decoration: none;
-          font-size: 1.2rem;
-          font-weight: bold;
-
-          &.is-active {
-            background-color: #e6c8ff;
-            color: white;
-            border-radius: 10px;
-          }
-
-          &:hover {
-            color: white;
-            background-color: #e6c8ff;
-            border-radius: 10px;
-          }
+    }
+  
+    li {
+      margin: 4px;
+  
+      a {
+        display: block;
+        padding: 20px 20px;
+        color: #7a5c9e;
+        text-decoration: none;
+        font-size: 1.2rem;
+        font-weight: bold;
+  
+        &.is-active {
+          background-color: #e6c8ff;
+          color: white;
+          border-radius: 10px;
+        }
+  
+        &:hover {
+          color: white;
+          background-color: #e6c8ff;
+          border-radius: 10px;
         }
       }
     }
   }
+  
+  nav.block-menu {
+    display: flex;
+    align-items: center; /* Zorgt ervoor dat alles netjes uitgelijnd is */
+    justify-content: center; /* Houdt het menu in het midden */
+    position: relative;
+  }
+  
+  .menu-logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 20px; /* Zet het logo links */
+  }
+  
+  .menu-logo-icon {
+    font-size: 30px;
+    margin-right: 10px;
+  }
+  
+  .menu-logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #7a5c9e;
+  }
+  
+  

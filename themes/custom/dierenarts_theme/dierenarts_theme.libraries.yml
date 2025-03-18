@@ -5,5 +5,3 @@ global-styling:
       dist/css/style.css: {}
   js:
     js/script.js: {}
-  dependencies:
-    - classy:classy/base
