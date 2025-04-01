@@ -1,47 +1,56 @@
-.hero {
+.hero-content {
     padding: 50px;
-    background: #e6c8ff; /* Lichte paarse achtergrond */
+    background: #e6c8ff; 
     color: white;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    text-align: left;
-
-    h2 {
-        font-size: 3rem;
-        color: #6a3d91; /* Donkerder paars voor de titel */
-        font-weight: bold;
-    }
-
-    &.text {
-        font-size: 1.5rem;
-        text-align: left;
-        margin: 0;
-    }
+    text-align: center; 
 }
 
-.region-hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    width: 100%;
-    background: #e6c8ff; 
-
-    img {
-        max-width: 300px; 
-        height: auto;
-        margin-right: 20px; 
-    }
-    
+.hero-image img {
+    max-width: 400px; 
+    height: auto;
+    margin-right: 40px; 
 }
 
-
-
-
-.right-content {
+.hero-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center; 
     gap: 10px;
+    margin-left: 20px;
 }
+
+.hero-title {
+    font-size: 3rem;
+    color: #6a3d91; 
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero-slogan {
+    font-size: 1.5rem;
+    color: white; 
+}
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .hero-image img {
+        max-width: 80%; 
+        height: auto;
+        margin: 0 auto 20px;
+    }
+
+    .hero-text {
+        margin-left: 0;
+        align-items: center;
+    }
+}
+

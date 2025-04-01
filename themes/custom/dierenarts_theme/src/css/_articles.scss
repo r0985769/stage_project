@@ -1,95 +1,218 @@
 .view-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 20px;
-    gap: 20px; 
-  }
-  
-  .views-row {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px; 
-  }
-  
-  .views-col {
-    flex: 1;
-    max-width: 320px;
-    min-width: 280px;
-    box-sizing: border-box;
-  }
-  
-  article {
-    margin-bottom: 50px;
-  }
-  
-  article img {
-    width: 100%;
-    height: auto;
-    max-height: 200px;
-    border-radius: 10px;
-    display: block;
-    margin: 0 auto 12px;
-    object-fit: cover;
-  }
-  
-  h2 {
-    font-size: 1.3rem;
-    color: #7a5c9e;
-    margin: 0 0 8px 0;
-    font-weight: 600;
-  }
+  gap: 40px;
+  max-width: 70%; 
+  margin: 0 auto;
+  justify-items: center;
+  padding: 40px;
+  text-align: center;
+}
+
+.views-row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: stretch;
+  margin-bottom: 20px;
+}
+
+.views-col {
+  display: flex;
+  background: none;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(115, 58, 164, 0.8);
+  padding: 0;
+  flex: 1 1 30%;
+  box-sizing: border-box;
+  align-items: center;
+  flex-direction: column;
+
 
   p {
-    font-size: 1rem;
-    color: #6a3d91;
-    margin: 0;
+    margin-bottom: 10px;
+    flex-grow: 1;
+
+    
+    }
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+article img {
+  width: 100%;
+  min-height: 200px;
+  object-fit: cover; 
+  border-radius: 0;
+  margin: 0;
+ display: block;
+
+}
+
+
+h2 {
+  color: #7a5c9e;
+  margin: 0 0 8px 0;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 30px;}
+
+h3 {
+  color: #7a5c9e;
+  margin: 0 0 8px 0;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 1rem;
+  color: #6a3d91;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+
+.node-readmore{
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.node-readmore a {
+  display: inline-flex;
+  padding: 5px 15px;
+  align-items: center;
+  justify-content: center;
+  background-color: #7a5c9e; 
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: auto;   
+  padding-top: 10px; 
+  text-align: center;  
+  margin-top: 5px;
+  
+}
+
+.node-readmore a:hover {
+  background-color: #e6c8ff;
+}
+
+
+.links.inline li {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+}
+
+
+ul.inline, ul.links.inline {
+
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  padding: 0;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+
+@media (max-width: 1024px) {
+  .views-row {
+    justify-content: space-around;
   }
 
+  .views-col {
+    flex: 1 1 45%;
+    min-width: 200px;
+  }
+}
 
-//taxonomy term
+@media (max-width: 768px) {
+  .views-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .views-col {
+    flex: 1 1 100%; 
+    min-width: 100%;
+  }
+
+  h3 {
+    font-size: 18px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .views-col p {
+    min-height: 80px; 
+  }
+
+  .node-readmore a {
+    padding: 5px 10px; 
+  }
+}
+
+
 .form--inline {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin-top: 10px;
 }
 
 .form-item label {
-    font-weight: bold;
-    color: #7a5c9e;
-    margin-right: 8px;
+  font-weight: bold;
+  color: #7a5c9e;
+  margin-right: 5px;
 }
 
 .form-select {
-    padding: 8px 12px;
-    font-size: 16px;
-    background-color: #fff;
-    cursor: pointer;
-    border: #e6c8ff 1px solid;
-    border-radius: 5px;
-    color:#6a3d91 ;
-
-    &:hover {
-        background-color: #f0f0f0;
-    }
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #fff;
 }
 
-
-.form-submit {
-    background-color: #e6c8ff;
-    color: white;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border: none; 
-    border-radius: 5px;
-
-    &:hover {
-        background-color: #6a3d91;
-    }
+.form-select:focus {
+  border-color: #e6c8ff;
+  outline: none;
 }
+
+.form-actions {
+  margin-left: 10px;
+}
+
+.button {
+  background-color: #e6c8ff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #d1aaff;
+  box-shadow: 0 0 10px #e6c8ff;
+  transition: all 0.3s ease;
+}
+
 
 

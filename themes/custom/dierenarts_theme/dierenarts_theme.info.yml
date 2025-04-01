@@ -8,6 +8,7 @@ dependencies:
   - classy:classy
 libraries:
   - dierenarts_theme/global-styling
+  - dierenarts_theme/global-scripts
 regions:
   header: 'Header'
   navigation: 'Navigation'
