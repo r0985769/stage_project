@@ -26,15 +26,20 @@
         "drupal/core-project-message": "^10.4",
         "drupal/core-recommended": "^10.4",
         "drupal/core-vendor-hardening": "^10.4",
+        "drupal/custom_body_class": "2.0",
         "drupal/entity_reference_revisions": "^1.12",
+        "drupal/geocoder": "4.28",
         "drupal/geofield": "^1.64",
         "drupal/geofield_map": "^3.0",
+        "drupal/leaflet": "^10.2",
         "drupal/oembed_providers": "^2.2",
         "drupal/paragraphs": "^1.18",
         "drupal/pathauto": "^1.13",
         "drupal/telephone_validation": "^2.5",
         "drupal/webform": "^6.2",
-        "drush/drush": "^13.3"
+        "drush/drush": "^13.3",
+        "geocoder-php/google-maps-provider": "4.7",
+        "geocoder-php/nominatim-provider": "*"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -55,6 +60,23 @@
     },
     "extra": {
         "drupal-scaffold": {
+            "file-mapping": {
+                "[web-root]/.ht.router.php": false,
+                "[web-root]/INSTALL.txt": false,
+                "[web-root]/README.md": false,
+                "[web-root]/example.gitignore": false,
+                "[web-root]/modules/README.txt": false,
+                "[web-root]/profiles/README.txt": false,
+                "[web-root]/robots.txt": {
+                    "append": "assets/addition-robots.txt"
+                },
+                "[web-root]/sites/README.txt": false,
+                "[web-root]/sites/development.services.yml": false,
+                "[web-root]/sites/example.sites.php": {
+                    "append": "assets/addition-example.sites.php"
+                },
+                "[web-root]/themes/README.txt": false
+            },
             "locations": {
                 "web-root": "./"
             }

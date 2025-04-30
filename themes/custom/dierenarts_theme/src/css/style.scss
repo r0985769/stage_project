@@ -1,13 +1,16 @@
-   
    @import "header";
    @import "footer";
    @import "nav";
    @import "hero";
    @import "articles";
    @import "form";
-   
-   
-   body{
+   @import "detailpages";
+   @import "news";
+   @import "office";
+   @import "map";
+
+   html,
+   body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
@@ -17,22 +20,19 @@
       font-style: bold;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      background-color: #f9f6fd;
+   }
 
   
 
+   
+
+   #block-dierenarts-theme-breadcrumbs-2 h2 {
+      display: none;
+   }
+
+   #block-dierenarts-theme-breadcrumbs-2 nav.breadcrumb ol {
+      padding: 15px 15px;
+   }
+
+   

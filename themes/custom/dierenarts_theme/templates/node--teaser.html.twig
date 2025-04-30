@@ -79,25 +79,29 @@
 %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
-
-
-  
-
-  <div{{ content_attributes.addClass('node__content') }}>
+  <div{{ content_attributes.addClass('content') }}>
     {{ content.field_image }}
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h3{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h3>
-  {% endif %}
-    {{ title_suffix }}
 
-    {{ content|without('field_image') }}
+    <div class="card-body">
+      {{ title_prefix }}
+      {% if label and not page %}
+        <h3{{ title_attributes }}>
+          <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+        </h3>
+      {% endif %}
+      {{ title_suffix }}
 
-       
+      {{ content|without('field_image', 'field_tags', 'links') }}
 
-    
+      <div class="readmore">
+        {{ content.links }}
+      </div>
+    </div>
+
+    <div class="badge-wrapper">
+      {{ content.field_tags }}
+    </div>
   </div>
-
 </article>
+
+

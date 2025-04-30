@@ -1,10 +1,96 @@
-.views-view-grid .views-row{
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  padding: 40px;
-  text-align: center;
-  margin-bottom: 10px;
-}
+ .path-offices {
+   .form--inline {
+     display: flex;
+     align-items: flex-end;
+     gap: 10px;
+     flex-wrap: wrap;
+     padding: 10px;
+     border-radius: 8px;
+     max-width: 300px;
+     color: #7a5c9e;
+   }
 
+   .form-item {
+     display: flex;
+     flex-direction: column;
+     gap: 3px;
+     min-width: 120px;
+     max-width: 150px;
+
+     label {
+       font-size: 12px;
+       font-weight: 500;
+       color: #7a5c9e;
+     }
+
+     .form-select,
+     input[type="text"] {
+       padding: 4px 8px;
+       font-size: 13px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       min-width: 120px;
+       max-width: 150px;
+     }
+   }
+
+   .form-actions {
+     display: flex;
+     align-items: flex-end;
+     margin-left: 0;
+
+     .button {
+       background-color: #7a5c9e;
+       color: white;
+       padding: 6px 12px;
+       font-size: 13px;
+       border-radius: 5px;
+       border: none;
+       cursor: pointer;
+       transition: background 0.3s ease;
+
+       &:hover {
+         background-color: #5e3a86;
+       }
+     }
+   }
+
+
+   .view-content {
+     gap: 40px;
+     max-width: 70%;
+     margin: 0 auto;
+     justify-items: center;
+     padding: 40px;
+     text-align: center;
+   }
+
+
+   .views-row {
+     display: flex;
+     width: 100%;
+     justify-content: space-between;
+     flex-wrap: wrap;
+     gap: 20px;
+     align-items: stretch;
+     margin-bottom: 20px;
+
+   }
+
+   .views-col {
+     background: none;
+     border-radius: 10px;
+     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+     overflow: hidden;
+     text-align: center;
+     text-decoration: none;
+     color: rgba(115, 58, 164, 0.8);
+     padding: 0;
+     flex: 1 1 30%;
+     box-sizing: border-box;
+     align-items: center;
+     flex-direction: column;
+     max-width: 350px;
+     display: flex;
+   }
+ }

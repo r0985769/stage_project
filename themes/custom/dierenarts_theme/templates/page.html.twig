@@ -5,14 +5,19 @@
 </nav>
 </header>
 
-
+  {{page.breadcrumb}}
 
   {{ page.highlighted }}
 
   {{ page.help }}
 
 
+  
 <main>
+  <div class="main-sidebar">
+  {{ page.sidebar }}
+  </div>
+  <div class="main-content">
   {{ page.content }}
 </main>
 

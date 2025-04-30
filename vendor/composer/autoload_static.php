@@ -14,20 +14,22 @@ class ComposerStaticInit540d8826beb9b1d6435207b00c8afd89
         '662a729f963d39afe703c9d9b7ab4a8c' => __DIR__ . '/..' . '/symfony/polyfill-php83/bootstrap.php',
         'f598d06aa772fa33d905e87be6398fb1' => __DIR__ . '/..' . '/symfony/polyfill-intl-idn/bootstrap.php',
         '8825ede83f2f289127722d4e842cf7e8' => __DIR__ . '/..' . '/symfony/polyfill-intl-grapheme/bootstrap.php',
-        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        'b6b991a57620e2fb6b2f66f03fe9ddc2' => __DIR__ . '/..' . '/symfony/string/Resources/functions.php',
         '23c18046f52bef3eea034657bafda50f' => __DIR__ . '/..' . '/symfony/polyfill-php81/bootstrap.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '89efb1254ef2d1c5d80096acd12c4098' => __DIR__ . '/..' . '/twig/twig/src/Resources/core.php',
         'ffecb95d45175fd40f75be8a23b34f90' => __DIR__ . '/..' . '/twig/twig/src/Resources/debug.php',
         'c7baa00073ee9c61edf148c51917cfb4' => __DIR__ . '/..' . '/twig/twig/src/Resources/escaper.php',
         'f844ccf1d25df8663951193c3fc307c8' => __DIR__ . '/..' . '/twig/twig/src/Resources/string_loader.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'def43f6c87e4f8dfd0c9e1b1bab14fe8' => __DIR__ . '/..' . '/symfony/polyfill-iconv/bootstrap.php',
         '2f69d3914119f042cca9e44442d5ce95' => __DIR__ . '/../..' . '/core/includes/bootstrap.inc',
+        '9c67151ae59aff4788964ce8eb2a0f43' => __DIR__ . '/..' . '/clue/stream-filter/src/functions_include.php',
         '23f09fe3194f8c2f70923f90d6702129' => __DIR__ . '/..' . '/illuminate/collections/functions.php',
         '60799491728b879e74601d83e38b2cad' => __DIR__ . '/..' . '/illuminate/collections/helpers.php',
         '47e1160838b5e5a10346ac4084b58c23' => __DIR__ . '/..' . '/laravel/prompts/src/helpers.php',
+        '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
         '801c31d8ed748cfa537fa45402288c95' => __DIR__ . '/..' . '/psy/psysh/src/functions.php',
     );
 
@@ -111,6 +113,14 @@ class ComposerStaticInit540d8826beb9b1d6435207b00c8afd89
             'Illuminate\\Support\\' => 19,
             'Illuminate\\Contracts\\' => 21,
         ),
+        'H' => 
+        array (
+            'Http\\Promise\\' => 13,
+            'Http\\Message\\' => 13,
+            'Http\\Discovery\\' => 15,
+            'Http\\Client\\' => 12,
+            'Http\\Adapter\\Guzzle7\\' => 21,
+        ),
         'G' => 
         array (
             'GuzzleHttp\\Psr7\\' => 16,
@@ -119,6 +129,10 @@ class ComposerStaticInit540d8826beb9b1d6435207b00c8afd89
             'Grasmash\\YamlCli\\' => 17,
             'Grasmash\\Expander\\' => 18,
             'Giggsey\\Locale\\' => 15,
+            'Geocoder\\Provider\\Nominatim\\' => 28,
+            'Geocoder\\Provider\\GoogleMaps\\' => 29,
+            'Geocoder\\Http\\' => 14,
+            'Geocoder\\' => 9,
         ),
         'E' => 
         array (
@@ -151,6 +165,7 @@ class ComposerStaticInit540d8826beb9b1d6435207b00c8afd89
             'Composer\\Semver\\' => 16,
             'Composer\\Installers\\' => 20,
             'CommerceGuys\\Addressing\\' => 24,
+            'Clue\\StreamFilter\\' => 18,
         ),
         'A' => 
         array (
@@ -370,6 +385,26 @@ class ComposerStaticInit540d8826beb9b1d6435207b00c8afd89
         array (
             0 => __DIR__ . '/..' . '/illuminate/contracts',
         ),
+        'Http\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/promise/src',
+        ),
+        'Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/message/src',
+        ),
+        'Http\\Discovery\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/discovery/src',
+        ),
+        'Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/httplug/src',
+        ),
+        'Http\\Adapter\\Guzzle7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/php-http/guzzle7-adapter/src',
+        ),
         'GuzzleHttp\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
@@ -393,6 +428,22 @@ class ComposerStaticInit540d8826beb9b1d6435207b00c8afd89
         'Giggsey\\Locale\\' => 
         array (
             0 => __DIR__ . '/..' . '/giggsey/locale/src',
+        ),
+        'Geocoder\\Provider\\Nominatim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/geocoder-php/nominatim-provider',
+        ),
+        'Geocoder\\Provider\\GoogleMaps\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/geocoder-php/google-maps-provider',
+        ),
+        'Geocoder\\Http\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/geocoder-php/common-http',
+        ),
+        'Geocoder\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/willdurand/geocoder',
         ),
         'Egulias\\EmailValidator\\' => 
         array (
@@ -486,6 +537,10 @@ class ComposerStaticInit540d8826beb9b1d6435207b00c8afd89
         array (
             0 => __DIR__ . '/..' . '/commerceguys/addressing/src',
         ),
+        'Clue\\StreamFilter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/clue/stream-filter/src',
+        ),
         'Asm89\\Stack\\' => 
         array (
             0 => __DIR__ . '/..' . '/asm89/stack-cors/src',
@@ -493,6 +548,13 @@ class ComposerStaticInit540d8826beb9b1d6435207b00c8afd89
     );
 
     public static $prefixesPsr0 = array (
+        'S' => 
+        array (
+            'Stiphle' => 
+            array (
+                0 => __DIR__ . '/..' . '/davedevelopment/stiphle/src',
+            ),
+        ),
         'C' => 
         array (
             'Console' => 
