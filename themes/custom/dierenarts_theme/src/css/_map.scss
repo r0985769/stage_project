@@ -11,7 +11,7 @@
 .P-column__right {
     flex: 1 1 45%;
     padding: 0 20px;
-   
+
 }
 
 
@@ -26,12 +26,22 @@ div#leaflet-map-paragraph-map-64-field-map-geofield {
 }
 
 
-@media (max-width: 768px) {
+@media (min-width: 1440px) {
+    .P-columns {
+        max-width: 2000px;
+    }
+
     .P-column__left,
     .P-column__right {
-        flex: 1 1 100%;
-        padding: 10px;
+        font-size: 1.2rem;
+    }
+
+    div#leaflet-map-paragraph-map-64-field-map-geofield {
+        min-height: 700px;
+        max-width: 100%;
     }
 }
 
+@media (max-width: 480px) {
 
+}

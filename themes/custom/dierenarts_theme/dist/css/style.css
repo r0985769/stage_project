@@ -9,6 +9,21 @@ header {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
 .region-footer {
   text-align: center;
   padding: 30px;
@@ -19,6 +34,7 @@ header {
   position: relative;
   justify-content: flex-end;
 }
+
 .region-footer ul.menu {
   display: flex;
   justify-content: center;
@@ -29,11 +45,13 @@ header {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .region-footer ul.menu li {
   display: inline-block;
   height: 40px;
   line-height: 40px;
 }
+
 .region-footer ul.menu li a {
   color: #7a5c9e;
   text-decoration: none;
@@ -44,6 +62,7 @@ header {
   align-items: center;
   padding: 0 14px;
 }
+
 .region-footer ul.menu li a:hover {
   color: white;
 }
@@ -68,6 +87,11 @@ header {
   display: none !important;
 }
 
+@media screen and (min-width: 400px) {
+  .region-footer {
+    margin-top: 300px;
+  }
+}
 .pawcare-link {
   position: absolute;
   top: 20px;
@@ -465,28 +489,9 @@ nav.block-menu {
   .path-frontpage .node-readmore a {
     padding: 5px 10px;
   }
-  .path-articles .form--inline,
-  .path-frontpage .form--inline {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .path-articles .form-item,
-  .path-frontpage .form-item {
-    width: 100%;
-  }
-  .path-articles .form-actions,
-  .path-frontpage .form-actions {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-  }
 }
 
 .webform-submission-form {
-  /* position:relative;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%); */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -549,6 +554,25 @@ textarea:focus {
   background-color: #7c3991;
 }
 
+@media (min-width: 1440px) {
+  .webform-submission-form {
+    max-width: 600px;
+    min-height: 600px;
+  }
+  .form-item label {
+    font-size: 1.2rem;
+  }
+  input[type=text],
+  input[type=email],
+  input[type=tel],
+  textarea {
+    font-size: 14px;
+  }
+  .webform-button--submit {
+    font-size: 18px;
+    padding: 14px 24px;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1266,11 +1290,17 @@ div#leaflet-map-paragraph-map-64-field-map-geofield {
   filter: hue-rotate(90deg) saturate(150%) brightness(110%);
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1440px) {
+  .P-columns {
+    max-width: 2000px;
+  }
   .P-column__left,
   .P-column__right {
-    flex: 1 1 100%;
-    padding: 10px;
+    font-size: 1.2rem;
+  }
+  div#leaflet-map-paragraph-map-64-field-map-geofield {
+    min-height: 700px;
+    max-width: 100%;
   }
 }
 html,
