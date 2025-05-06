@@ -1,16 +1,27 @@
 html, body {
   height: 100%;
-  margin: 0;
 }
 
-.page-wrapper {
-  min-height: 100vh;
+body{
   display: flex;
   flex-direction: column;
 }
 
 main {
   flex: 1;
+}
+.main-content{
+  flex: 1 0 auto;
+}
+
+.dialog-off-canvas-main-canvas{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer{
+  flex-shrink: 0;
 }
 
 .region-footer {
@@ -21,7 +32,6 @@ main {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  justify-content: flex-end;
 }
 
 .region-footer ul.menu {
@@ -76,8 +86,3 @@ main {
   display: none !important;
 }
 
-@media screen and (min-width: 400px) {
-  .region-footer {
-    margin-top: 300px;
-  }
-}

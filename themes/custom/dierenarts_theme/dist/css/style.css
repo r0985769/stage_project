@@ -11,17 +11,29 @@ header {
 
 html, body {
   height: 100%;
-  margin: 0;
 }
 
-.page-wrapper {
-  min-height: 100vh;
+body {
   display: flex;
   flex-direction: column;
 }
 
 main {
   flex: 1;
+}
+
+.main-content {
+  flex: 1 0 auto;
+}
+
+.dialog-off-canvas-main-canvas {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  flex-shrink: 0;
 }
 
 .region-footer {
@@ -32,7 +44,6 @@ main {
   width: 100%;
   box-sizing: border-box;
   position: relative;
-  justify-content: flex-end;
 }
 
 .region-footer ul.menu {
@@ -87,11 +98,6 @@ main {
   display: none !important;
 }
 
-@media screen and (min-width: 400px) {
-  .region-footer {
-    margin-top: 300px;
-  }
-}
 .pawcare-link {
   position: absolute;
   top: 20px;
@@ -1300,7 +1306,18 @@ div#leaflet-map-paragraph-map-64-field-map-geofield {
   }
   div#leaflet-map-paragraph-map-64-field-map-geofield {
     min-height: 700px;
-    max-width: 100%;
+    min-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .P-columns {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .P-column__left,
+  .P-column__right {
+    flex: 1 1 100%;
+    min-width: 100%;
   }
 }
 html,

@@ -38,10 +38,19 @@ div#leaflet-map-paragraph-map-64-field-map-geofield {
 
     div#leaflet-map-paragraph-map-64-field-map-geofield {
         min-height: 700px;
-        max-width: 100%;
+        min-width: 1000px;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) {
+    .P-columns {
+        flex-direction: column;
+        gap: 15px;
+    }
 
+    .P-column__left,
+    .P-column__right {
+        flex: 1 1 100%;
+        min-width: 100%;
+    }
 }
