@@ -1053,19 +1053,74 @@ textarea:focus {
 
 .path-offices .view-content {
   padding: 2rem 0;
-  gap: 40px;
   max-width: 90%;
   margin: 0 auto;
   justify-items: center;
   text-align: center;
 }
-.path-offices .view-articles-view {
-  margin-bottom: 2rem;
+.path-offices a {
+  text-decoration: none;
 }
-.path-offices .view-articles-view .view-filters {
-  margin-bottom: 2rem;
+.path-offices h3 {
+  margin-top: 20px;
 }
-.path-offices .view-articles-view .view-filters .form--inline {
+.path-offices .node__links {
+  margin: 0 1.5rem 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+.path-offices .node__links a {
+  display: inline-block;
+  font-weight: bold;
+  color: #7a5c9e;
+  text-decoration: none;
+  font-size: 0.9rem;
+  border: 2px solid #a889cf;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+.path-offices .view-filters {
+  margin-bottom: 2rem;
+  margin-left: 10px;
+}
+.path-offices .view-filters .views-exposed-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-end;
+  margin-left: 10px;
+}
+.path-offices .view-filters .views-exposed-form .form-select,
+.path-offices .view-filters .views-exposed-form input[type=text] {
+  padding: 4px 8px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  min-width: 120px;
+  max-width: 150px;
+}
+.path-offices .view-filters .views-exposed-form .form-actions {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 0;
+}
+.path-offices .view-filters .views-exposed-form .form-actions .button {
+  background-color: #7a5c9e;
+  color: white;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.path-offices .view-filters .views-exposed-form .form-actions .button:hover {
+  background-color: #5e3a86;
+}
+.path-offices .view-filters .form--inline {
   display: flex;
   align-items: flex-end;
   gap: 10px;
@@ -1073,29 +1128,29 @@ textarea:focus {
   max-width: 300px;
   color: #7a5c9e;
 }
-.path-offices .view-articles-view .views-view-grid {
+.path-offices .views-view-grid {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -0.5rem;
 }
-.path-offices .view-articles-view .views-view-grid .views-row {
+.path-offices .views-view-grid .views-row {
   display: flex;
   width: 100%;
   margin-bottom: 1rem;
 }
-.path-offices .view-articles-view .views-view-grid .views-col {
+.path-offices .views-view-grid .views-col {
   padding: 0 0.5rem;
   margin-bottom: 1rem;
   box-sizing: border-box;
   width: 33.3333%;
 }
 @media (max-width: 992px) {
-  .path-offices .view-articles-view .views-view-grid .views-col {
+  .path-offices .views-view-grid .views-col {
     width: 50% !important;
   }
 }
 @media (max-width: 576px) {
-  .path-offices .view-articles-view .views-view-grid .views-col {
+  .path-offices .views-view-grid .views-col {
     width: 100% !important;
   }
 }
@@ -1145,6 +1200,7 @@ textarea:focus {
 .path-offices .node--view-mode-teaser .node__content .card-body h3 {
   margin: 0 0 0.75rem;
   font-size: 1.25rem;
+  line-height: 1.3;
   color: #7a5c9e;
 }
 .path-offices .node--view-mode-teaser .node__content .card-body h3 a {
@@ -1152,14 +1208,11 @@ textarea:focus {
   text-decoration: none;
 }
 .path-offices .node--view-mode-teaser .node__content .card-body .field--name-body {
-  margin: 0 1.5rem 1rem;
+  margin: 0 0 1rem;
   font-size: 0.9rem;
   line-height: 1.5;
   color: #2a4d73;
   flex-grow: 1;
-  position: relative;
-  max-height: 4.5em;
-  overflow: hidden;
 }
 .path-offices .node--view-mode-teaser .node__content p {
   font-size: 1rem;
@@ -1167,25 +1220,6 @@ textarea:focus {
   margin-bottom: 10px;
   padding: 10px;
   flex-grow: 1;
-}
-.path-offices .node--view-mode-teaser .node__content .badge-wrapper {
-  padding: 0 1.5rem 1.5rem;
-}
-.path-offices .node--view-mode-teaser .node__content .badge-wrapper .field--name-field-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-.path-offices .node--view-mode-teaser .node__content .badge-wrapper .field--name-field-tags .field__item a {
-  display: inline-block;
-  padding: 0.25rem 0.75rem;
-  background-color: #f2e0f1;
-  color: #790063;
-  border-radius: 1rem;
-  text-decoration: none;
-  font-size: 0.75rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
 }
 @media (max-width: 1024px) {
   .path-offices .views-row {
