@@ -133,43 +133,43 @@
 
     @media (max-width: 1024px) {
         .views-row {
-          flex-direction: column;
-          gap: 15px;
+            flex-direction: column;
+            gap: 15px;
         }
-    
+
         .views-col {
-          flex: 1 1 100%;
-          min-width: 100%;
+            flex: 1 1 100%;
+            min-width: 100%;
         }
-    
+
         h3 {
-          font-size: 18px;
+            font-size: 18px;
         }
-      }
-    
-      @media (max-width: 480px) {
+    }
+
+    @media (max-width: 480px) {
         .views-col p {
-          min-height: 70px;
-          font-size: 0.7rem;
+            min-height: 70px;
+            font-size: 0.7rem;
         }
-    
+
         .node-readmore a {
-          padding: 5px 10px;
+            padding: 5px 10px;
         }
-    
+
         .form--inline {
-          flex-direction: column;
-          align-items: stretch;
+            flex-direction: column;
+            align-items: stretch;
         }
-    
+
         .form-item {
-          width: 100%;
+            width: 100%;
         }
-    
+
         .form-actions {
-          width: 100%;
-          justify-content: center;
-          margin-top: 10px;
+            width: 100%;
+            justify-content: center;
+            margin-top: 10px;
         }
-      }
+    }
 }
