@@ -9,8 +9,6 @@ $bg-color: #f8f9fa;
     box-sizing: border-box;
 }
 
-
-
 .page-node-type-article,
 .page-node-type-news,
 .page-node-type-offices {
@@ -21,7 +19,6 @@ $bg-color: #f8f9fa;
         align-items: flex-start;
         padding: 20px;
         gap: 40px;
-
     }
 
     .main-sidebar {
@@ -30,14 +27,11 @@ $bg-color: #f8f9fa;
         margin-top: 100px;
     }
 
-
-
     .main-content {
         flex: 1;
         max-width: 900px;
     }
 
-    /* sidebar */
     .views-element-container {
         display: flex;
         flex-direction: column;
@@ -56,27 +50,14 @@ $bg-color: #f8f9fa;
     }
 
     .views-field-field-images img {
-
         width: 100%;
         height: auto;
         object-fit: cover;
         border-bottom: 2px solid $primary-color;
         min-width: 250px;
-
     }
 
-
-    .field--name-field-image img {
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        margin: 0 auto;
-        display: block;
-    }
-
-
-
+    .field--name-field-image img,
     .media--type-image img {
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
         max-width: 100%;
@@ -84,13 +65,12 @@ $bg-color: #f8f9fa;
         object-fit: cover;
         margin: 0 auto;
         display: block;
-        min-width: 800px;
-        width: 100%;
-
-
     }
 
-
+    .media--type-image img {
+        min-width: 800px;
+        width: 100%;
+    }
 
     .clearfix.text-formatted {
         color: $primary-color;
@@ -102,8 +82,7 @@ $bg-color: #f8f9fa;
         border-radius: 8px;
     }
 
-    h2,
-    h3 {
+    h2, h3 {
         margin: 10px 0;
         text-align: left;
     }
@@ -126,21 +105,14 @@ $bg-color: #f8f9fa;
         line-height: 1.8;
     }
 
-    ul,
-    ol {
+    ul, ol {
         margin: 10px 0;
         padding-left: 20px;
         text-align: left;
         list-style-position: outside;
     }
 
-    ol li {
-        margin-bottom: 10px;
-        font-size: 16px;
-        color: $secondary-color;
-        line-height: 1.8;
-    }
-
+    ol li,
     .field--name-field-text-paragraph ul li {
         margin-bottom: 10px;
         font-size: 16px;
@@ -156,8 +128,8 @@ $bg-color: #f8f9fa;
         text-align: left;
     }
 
-    /*news badges*/
-    .field--name-field-category a {
+    .field--name-field-category a,
+    .field__item a {
         background-color: #f2e0f1;
         color: #790063;
         padding: 0.3rem 0.6rem;
@@ -168,19 +140,8 @@ $bg-color: #f8f9fa;
         display: inline-block;
     }
 
-
-  
-
-    /*article badges*/
     .field__item a {
-        background-color: #f2e0f1;
-        color: #790063;
-        padding: 0.3rem 0.6rem;
-        border-radius: 8px;
-        font-size: 0.8rem;
-        text-decoration: none;
         margin-right: 0.3rem;
-        margin-left: 40px;
     }
 
     .field__label {
@@ -198,5 +159,106 @@ $bg-color: #f8f9fa;
         margin-left: 40px;
     }
 
+    @media (max-width: 992px) {
+        main {
+            flex-direction: column;
+            padding: 10px;
+        }
 
+        .main-sidebar {
+            width: 100%;
+            margin-top: 40px;
+            order: 2;
+        }
+
+        .main-content {
+            max-width: 100%;
+            order: 1;
+        }
+
+        .views-element-container {
+            margin-left: 0;
+            padding: 10px;
+        }
+
+        .media--type-image img {
+            min-width: 100%;
+        }
+
+        h2 {
+            font-size: 24px;
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+
+        .clearfix.text-formatted {
+            padding: 15px 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        h2 {
+            font-size: 22px;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        p,
+        ol li,
+        .field--name-field-text-paragraph ul li {
+            font-size: 15px;
+        }
+
+        .field__label,
+        .field--name-field-category a,
+        .field__item a {
+            margin-left: 20px;
+        }
+
+        p.address {
+            margin-left: 20px;
+        }
+
+        .media--type-image img {
+            min-width: 100%;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .clearfix.text-formatted {
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p,
+        ol li,
+        .field--name-field-text-paragraph ul li {
+            font-size: 14px;
+        }
+
+        .views-field-title a {
+            font-size: 1em;
+        }
+
+        .field--name-field-category a,
+        .field__item a {
+            font-size: 0.7rem;
+            margin-left: 10px;
+        }
+
+        .media--type-image img {
+            min-width: 100%;
+        }
+    }
 }
