@@ -101,7 +101,6 @@
   .views-view-grid {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -0.5rem;
 
     .views-row {
       display: flex;
@@ -154,9 +153,9 @@
       .field--name-field-image-office {
         position: relative;
         overflow: hidden;
-        padding-top: 56.25%;
+        height: 200px;
 
-        img.image-style-medium {
+        img.image-style-large {
           position: absolute;
           top: 0;
           left: 0;
@@ -226,6 +225,12 @@
     .views-col p {
       min-height: 70px;
       font-size: 0.7rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .field--name-field-image-office {
+      height: 150px;
     }
   }
 }

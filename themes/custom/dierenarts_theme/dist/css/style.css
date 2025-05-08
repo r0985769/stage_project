@@ -1161,7 +1161,6 @@ textarea:focus {
 .path-offices .views-view-grid {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -0.5rem;
 }
 .path-offices .views-view-grid .views-row {
   display: flex;
@@ -1209,9 +1208,9 @@ textarea:focus {
 .path-offices .node--view-mode-teaser .node__content .field--name-field-image-office {
   position: relative;
   overflow: hidden;
-  padding-top: 56.25%;
+  height: 200px;
 }
-.path-offices .node--view-mode-teaser .node__content .field--name-field-image-office img.image-style-medium {
+.path-offices .node--view-mode-teaser .node__content .field--name-field-image-office img.image-style-large {
   position: absolute;
   top: 0;
   left: 0;
@@ -1270,20 +1269,26 @@ textarea:focus {
     font-size: 0.7rem;
   }
 }
+@media (max-width: 576px) {
+  .path-offices .field--name-field-image-office {
+    height: 150px;
+  }
+}
 
 .P-columns {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  max-width: 1200px;
+  max-width: 1000px;
   margin: 0 auto 50px auto;
 }
 
 .P-column__left,
 .P-column__right {
   flex: 1 1 45%;
-  padding: 0 20px;
+  padding: 0 40px;
+  font-size: 1rem;
 }
 
 div#leaflet-map-paragraph-map-64-field-map-geofield {
