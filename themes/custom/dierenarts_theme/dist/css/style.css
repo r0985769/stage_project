@@ -1263,9 +1263,14 @@ textarea:focus {
     font-size: 0.7rem;
   }
 }
-@media (max-width: 576px) {
+@media (min-width: 1400px) {
+  .path-offices .views-col {
+    min-height: 500px;
+  }
   .path-offices .field--name-field-image-office {
-    height: 150px;
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
   }
 }
 
