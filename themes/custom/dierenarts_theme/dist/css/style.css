@@ -246,6 +246,20 @@ nav.block-menu {
     align-items: center;
   }
 }
+@media (min-width: 1400px) {
+  .hero-content {
+    padding: 200px;
+  }
+  .hero-image img {
+    max-width: 100%;
+  }
+  .hero-title {
+    font-size: 4rem;
+  }
+  .hero-slogan {
+    font-size: 2rem;
+  }
+}
 .path-articles h2,
 .path-frontpage h2 {
   color: #7a5c9e;

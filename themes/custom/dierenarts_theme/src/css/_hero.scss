@@ -54,3 +54,21 @@
     }
 }
 
+@media (min-width: 1400px) {
+    .hero-content {
+        padding: 200px;
+    }
+
+    .hero-image img {
+        max-width: 100%; 
+    }
+
+    .hero-title {
+        font-size: 4rem;
+    }
+
+    .hero-slogan {
+        font-size: 2rem;
+    }
+}
+
