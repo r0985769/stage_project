@@ -1,6 +1,12 @@
 <header>
   {{ page.header }}
-<nav>
+<nav class= "navbar">
+ <div class="site-logo site-logo--header" >
+    <a href="{{ url('<front>') }}">
+      <span class="site-logo__text">Pawcare</span>
+      <span class="site-logo__icon">🐾</span>
+    </a>
+  </div>
   {{ page.navigation }}
 </nav>
 </header>
@@ -23,5 +29,13 @@
 </main>
 
 <footer class="footer">
+ <div class="site-logo site-logo--footer" >
+    <a href="{{ url('<front>') }}">
+      <span class="site-logo__text">Pawcare</span>
+      <span class="site-logo__icon">🐾</span>
+    </a>
+  </div>
   {{ page.footer }}
 </footer>
+
+

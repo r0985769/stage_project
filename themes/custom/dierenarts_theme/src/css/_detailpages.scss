@@ -18,7 +18,9 @@ $bg-color: #f8f9fa;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 20px;
-        gap: 40px;
+        gap: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
     }
 
     .main-sidebar {
@@ -29,7 +31,7 @@ $bg-color: #f8f9fa;
 
     .main-content {
         flex: 1;
-        max-width: 900px;
+        max-width: 800px;
     }
 
     .views-element-container {
@@ -186,54 +188,6 @@ $bg-color: #f8f9fa;
         }
 
         h2 {
-            font-size: 24px;
-        }
-
-        h3 {
-            font-size: 20px;
-        }
-
-        .clearfix.text-formatted {
-            padding: 15px 20px;
-        }
-    }
-
-    @media (max-width: 768px) {
-        h2 {
-            font-size: 22px;
-        }
-
-        h3 {
-            font-size: 18px;
-        }
-
-        p,
-        ol li,
-        .field--name-field-text-paragraph ul li {
-            font-size: 15px;
-        }
-
-        .field__label,
-        .field--name-field-category a,
-        .field__item a {
-            margin-left: 20px;
-        }
-
-        p.address {
-            margin-left: 20px;
-        }
-
-        .media--type-image img {
-            min-width: 100%;
-        }
-    }
-
-    @media (max-width: 576px) {
-        .clearfix.text-formatted {
-            padding: 10px;
-        }
-
-        h2 {
             font-size: 20px;
         }
 
@@ -251,14 +205,59 @@ $bg-color: #f8f9fa;
             font-size: 1em;
         }
 
+        .field__label,
         .field--name-field-category a,
         .field__item a {
+            margin-left: 20px;
             font-size: 0.7rem;
-            margin-left: 10px;
         }
 
+        p.address {
+            margin-left: 20px;
+        }
+
+        .clearfix.text-formatted {
+            padding: 10px;
+        }
+    }
+
+    @media (min-width: 1400px) {
+        main {
+            max-width: 1600px;
+            padding: 40px;
+            gap: 60px;
+        }
+
+        .main-content {
+            font-size: 1.1em;
+            max-width: 1000px;
+        }
+
+        .main-sidebar {
+            flex: 0 0 400px;
+        }
+
+        h2 {
+            font-size: 32px;
+        }
+
+        h3 {
+            font-size: 26px;
+        }
+
+        p,
+        ol li,
+        .field--name-field-text-paragraph ul li {
+            font-size: 17px;
+        }
+
+        .clearfix.text-formatted {
+            padding: 30px 50px;
+        }
+
+        .views-field-field-images img,
         .media--type-image img {
-            min-width: 100%;
+            max-width: 100%;
         }
     }
 }

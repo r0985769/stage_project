@@ -21,10 +21,10 @@ main {
 }
 
 footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-shrink: 0;
-}
-
-.region-footer {
   text-align: center;
   padding: 30px;
   background: #e6c8ff;
@@ -32,23 +32,29 @@ footer{
   width: 100%;
   box-sizing: border-box;
   position: relative;
+
+  ul.menu{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 
-.region-footer ul.menu {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  flex-wrap: wrap;
+
+.site-logo.site-logo--footer a {
+  display: inline-flex;
   align-items: center;
-}
-
-.region-footer ul.menu li {
-  display: inline-block;
-  height: 40px;
-  line-height: 40px;
+  text-decoration: none;
+  color: #7a5c9e;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-bottom: 20px;
 }
 
 .region-footer ul.menu li a {
@@ -71,18 +77,6 @@ footer{
   justify-content: center;
   gap: 2rem;
 }
-
-.menu-content .pawcare-link a {
-  padding: 0 14px;
-  color: #7a5c9e;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: bold;
-  display: inline-flex;
-  align-items: center;
-}
-
 .region-footer .hamburger-menu {
   display: none !important;
 }
-
